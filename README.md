@@ -1,5 +1,7 @@
 Customer Churn Prediction Project
+
 Objective
+
 Customer churn is a critical problem for businesses, as retaining customers is often more cost-effective than acquiring new ones. This project aims to predict whether a customer will churn (leave the service) based on various features related to their account and service usage.
 We utilize machine learning models to analyze the Telco Customer Churn dataset from Kaggle and determine the key factors influencing churn. The ultimate goal is to help businesses take proactive steps to retain customers and reduce churn rates.
 

@@ -17,7 +17,7 @@ The dataset undergoes preprocessing, feature selection, model training, and eval
 Project Workflow
 1. Data Exploration & Preprocessing
    
- Loading the Dataset
+Loading the Dataset
 The dataset is loaded into a Pandas DataFrame, and an initial exploration is performed.
 Missing values are identified and handled using KNN Imputation to ensure data completeness.
 Removing Unnecessary Columns
@@ -27,14 +27,14 @@ Categorical variables such as Gender, Contract Type, and Payment Method are conv
 Handling Class Imbalance
 Since churned customers are usually fewer, the dataset is balanced using SMOTE (Synthetic Minority Over-sampling Technique) to prevent bias in predictions.
 
-3. Feature Selection & Dimensionality Reduction
+2. Feature Selection & Dimensionality Reduction
    
 Feature Selection using SelectKBest
 We apply SelectKBest (ANOVA F-Test) to identify the most significant features for predicting churn.
 Dimensionality Reduction using PCA
 Principal Component Analysis (PCA) is used to reduce the number of features while retaining essential information. This improves model efficiency and avoids overfitting.
 
-4. Model Training & Hyperparameter Tuning
+3. Model Training & Hyperparameter Tuning
    
 We train multiple machine learning models to compare their performance:
  K-Nearest Neighbors (KNN)
@@ -45,7 +45,7 @@ We train multiple machine learning models to compare their performance:
  Hyperparameter Optimization using GridSearchCV
 Each model undergoes hyperparameter tuning using GridSearchCV to find the optimal parameters that maximize accuracy.
 
-5. Model Evaluation
+4. Model Evaluation
    
 Each model is evaluated using the following metrics:
    Accuracy Score – Measures the overall correctness of predictions.
@@ -53,12 +53,12 @@ Each model is evaluated using the following metrics:
    Confusion Matrix – Visualizes correct vs. incorrect classifications.
    Cross-Validation – Ensures the model performs well across different data splits.
 
-6. Model Comparison & Insights
+5. Model Comparison & Insights
    
-   Analyzing Performance Differences
+Analyzing Performance Differences
 The models are compared based on their performance metrics.
 We analyze why some models perform better than others based on dataset characteristics.
-   Business Interpretation
+Business Interpretation
 The most influential features leading to churn are identified.
 Strategies are suggested for customer retention, such as offering discounts to high-risk customers.
 
